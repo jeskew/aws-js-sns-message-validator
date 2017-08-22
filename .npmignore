@@ -1,0 +1,10 @@
+__fixtures__/
+__tests__/
+.idea/
+.sandbox/
+coverage/
+*.iml
+
+*.ts
+!*.d.ts
+tsconfig.test.json

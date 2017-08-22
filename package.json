@@ -7,19 +7,16 @@
     "url": "https://github.com/aws/aws-js-sns-message-validator.git"
   },
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "devDependencies": {
-    "chai": "^3.3.0",
-    "mocha": "^2.3.3",
-    "pem": "^1.8.1",
-    "rewire": "^2.3.4",
-    "sinon": "^1.17.6",
-    "underscore": "^1.8.3"
+    "@types/jest": "^20.0.2",
+    "@types/node": "^7.0.12",
+    "jest": "^20.0.4",
+    "typescript": "^2.3"
   },
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha"
+    "prepublishOnly": "tsc",
+    "pretest": "tsc -p tsconfig.test.json",
+    "test": "jest"
   },
   "keywords": [
     "AWS",
